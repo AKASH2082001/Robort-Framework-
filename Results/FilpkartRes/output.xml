@@ -1,87 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.10 on win32)" generated="20220407 12:06:14.172" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.10 on win32)" generated="20220407 12:13:51.237" rpa="false" schemaversion="3">
 <suite id="s1" name="App" source="C:\Users\Lenovo\PycharmProjects\Robot Framework\Tests\Filpkart\FunctionalTestSuite\App.robot">
-<test id="s1-t1" name="Google Search Test" line="8">
+<test id="s1-t1" name="Google Search Test" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${google_search}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220407 12:06:17.470" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
-<status status="PASS" starttime="20220407 12:06:17.467" endtime="20220407 12:06:27.902"/>
+<msg timestamp="20220407 12:13:55.107" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 12:13:55.106" endtime="20220407 12:14:11.123"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220407 12:06:27.904" endtime="20220407 12:06:28.042"/>
+<status status="PASS" starttime="20220407 12:14:11.124" endtime="20220407 12:14:11.288"/>
 </kw>
 <kw name="Search Data">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:q</arg>
 <arg>${search_query}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:28.045" level="INFO">Typing text 'filpkart' into text field 'name:q'.</msg>
-<status status="PASS" starttime="20220407 12:06:28.044" endtime="20220407 12:06:28.230"/>
+<msg timestamp="20220407 12:14:11.293" level="INFO">Typing text 'filpkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:14:11.288" endtime="20220407 12:14:11.678"/>
 </kw>
-<status status="PASS" starttime="20220407 12:06:28.043" endtime="20220407 12:06:28.230"/>
+<status status="PASS" starttime="20220407 12:14:11.288" endtime="20220407 12:14:11.678"/>
 </kw>
 <kw name="Submit Form" library="SeleniumLibrary">
 <doc>Submits a form identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:28.231" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" starttime="20220407 12:06:28.231" endtime="20220407 12:06:31.748"/>
+<msg timestamp="20220407 12:14:11.679" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 12:14:11.679" endtime="20220407 12:14:18.905"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class:LC20lb</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:31.751" level="INFO">Clicking element 'class:LC20lb'.</msg>
-<status status="PASS" starttime="20220407 12:06:31.750" endtime="20220407 12:06:34.986"/>
+<msg timestamp="20220407 12:14:18.906" level="INFO">Clicking element 'class:LC20lb'.</msg>
+<status status="PASS" starttime="20220407 12:14:18.906" endtime="20220407 12:14:25.354"/>
 </kw>
 <doc>This page is to test Chrome</doc>
 <tag>Google</tag>
-<status status="PASS" starttime="20220407 12:06:17.451" endtime="20220407 12:06:35.010"/>
+<status status="PASS" starttime="20220407 12:13:55.104" endtime="20220407 12:14:25.355"/>
 </test>
-<test id="s1-t2" name="Filpkart Search Test" line="17">
+<test id="s1-t2" name="Filpkart Search Test" line="19">
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220407 12:06:38.053" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220407 12:06:35.037" endtime="20220407 12:06:38.054"/>
+<msg timestamp="20220407 12:14:28.369" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 12:14:25.363" endtime="20220407 12:14:28.369"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:_2KpZ6l</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:38.055" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
-<status status="PASS" starttime="20220407 12:06:38.054" endtime="20220407 12:06:38.471"/>
+<msg timestamp="20220407 12:14:28.371" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220407 12:14:28.370" endtime="20220407 12:14:28.576"/>
 </kw>
 <kw name="Search Filpkart Data">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:q</arg>
 <arg>${product_search}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:38.475" level="INFO">Typing text 'iphone' into text field 'name:q'.</msg>
-<status status="PASS" starttime="20220407 12:06:38.474" endtime="20220407 12:06:38.686"/>
+<msg timestamp="20220407 12:14:28.577" level="INFO">Typing text 'iphone' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:14:28.577" endtime="20220407 12:14:28.818"/>
 </kw>
-<status status="PASS" starttime="20220407 12:06:38.473" endtime="20220407 12:06:38.687"/>
+<status status="PASS" starttime="20220407 12:14:28.577" endtime="20220407 12:14:28.819"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220407 12:06:41.690" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220407 12:06:38.687" endtime="20220407 12:06:41.692"/>
+<msg timestamp="20220407 12:14:31.822" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 12:14:28.819" endtime="20220407 12:14:31.822"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:L0Z3Pu</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220407 12:06:41.695" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
-<status status="PASS" starttime="20220407 12:06:41.694" endtime="20220407 12:06:41.924"/>
+<msg timestamp="20220407 12:14:31.825" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
+<status status="PASS" starttime="20220407 12:14:31.824" endtime="20220407 12:14:32.086"/>
 </kw>
-<status status="PASS" starttime="20220407 12:06:35.034" endtime="20220407 12:06:41.933"/>
+<doc>This page is for filpkart search</doc>
+<tag>filpkart</tag>
+<status status="PASS" starttime="20220407 12:14:25.358" endtime="20220407 12:14:32.088"/>
 </test>
-<status status="PASS" starttime="20220407 12:06:14.185" endtime="20220407 12:06:41.939"/>
+<status status="PASS" starttime="20220407 12:13:51.256" endtime="20220407 12:14:32.088"/>
 </suite>
 <statistics>
 <total>
 <stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">filpkart</stat>
 <stat pass="1" fail="0" skip="0">Google</stat>
 </tag>
 <suite>
